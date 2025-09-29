@@ -1,0 +1,180 @@
+/* General layout */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #0d0d0d;
+  color: white;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  gap: 20px;
+}
+
+.column {
+  flex: 1;
+  padding: 10px;
+}
+
+.left, .right {
+  background-color: #1a1a1a;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.center {
+  text-align: center;
+}
+
+/* Buttons */
+.game-btn, .upgrade-btn {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 12px 16px;
+  font-size: 16px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.1s, box-shadow 0.1s;
+}
+
+.game-btn:hover, .upgrade-btn:hover {
+  background-color: #444;
+  box-shadow: 0 0 10px #ffcc00;
+}
+
+.spacebar-btn {
+  margin-top: 20px;
+  padding: 20px 40px;
+  font-size: 24px;
+  background-color: #ff0066;
+  border: none;
+  border-radius: 12px;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.1s, box-shadow 0.1s;
+}
+
+.spacebar-btn.clicked {
+  transform: scale(0.95);
+  background-color: #ff3399;
+  box-shadow: 0 0 20px #ff3399;
+}
+
+/* Text and counters */
+.counter {
+  font-size: 48px;
+  margin: 20px 0;
+  color: #00ffcc;
+}
+
+.price {
+  float: right;
+  color: #ffcc00;
+  font-weight: bold;
+}
+
+.desc {
+  display: block;
+  font-size: 12px;
+  color: #aaa;
+  margin-top: 4px;
+}
+
+.quote {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 10px;
+  font-weight: bold;
+  background-color: #111;
+  color: #ff0066;
+  border-top: 2px solid #ff0066;
+}
+
+/* Main menu */
+.menu {
+  text-align: center;
+  padding: 40px;
+  background-color: #111;
+  color: #fff;
+  border-bottom: 2px solid #ff0066;
+}
+
+.menu-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.menu-btn {
+  padding: 12px 20px;
+  font-size: 16px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.1s, box-shadow 0.1s;
+}
+
+.menu-btn:hover {
+  background-color: #444;
+  box-shadow: 0 0 10px #ffcc00;
+}
+
+/* Geometry Dash Editor */
+#geoEditorCanvas {
+  background: #222;
+  border: 2px solid #555;
+  cursor: crosshair;
+}
+
+#saveGeoLevel {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #00cc66;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* Nickname Setup */
+#nicknameInput {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: none;
+  width: 200px;
+}
+
+/* Owner Menu */
+#ownerMenu button {
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: #0f0;
+  color: #000;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* Leaderboard */
+#leaderboard {
+  text-align: center;
+  padding: 20px;
+  background: #111;
+  color: white;
+}

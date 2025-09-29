@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Spacebar Arcade</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Nickname Setup -->
+  <div id="nicknameSetup" style="text-align:center; padding:20px;">
+    <h2>Enter Your Nickname</h2>
+    <input type="text" id="nicknameInput" placeholder="Your nickname..." />
+    <button onclick="saveNickname()">Save</button>
+  </div>
+
+  <!-- Owner Menu (hidden by default) -->
+  <div id="ownerMenu" style="display:none; background:#222; color:#0f0; padding:20px; text-align:center;">
+    <h2>👑 Owner Menu</h2>
+    <button onclick="resetProgress()">Reset Save</button>
+    <button onclick="addSpaces()">Add 1 Million Spaces</button>
+  </div>
+
+  <!-- Main Game UI -->
+  <div class="container">
+    <!-- Center Column: Clicker -->
+    <div class="column center">
+      <h2 class="quote">Amount of Spaces player did</h2>
+      <div class="counter" id="counter">0</div>
+      <button class="spacebar-btn" id="spacebarBtn">SPACEBAR</button>
+      <div id="cpsDisplay"></div>
+    </div>
+
+    <!-- Right Column: Scrollable Upgrades -->
+    <div class="column right">
+      <h3>Upgrades</h3>
+      <!-- Upgrades will be inserted here by script.js -->
+    </div>
+  </div>
+
+  <!-- Leaderboard -->
+  <div id="leaderboard" style="text-align:center; padding:20px; background:#111; color:white;">
+    <h3>🌍 Global Leaderboard</h3>
+    <!-- Leaderboard entries will be inserted here -->
+  </div>
+
+  <footer>BY ISMAIIL</footer>
+  <script src="script.js"></script>
+</body>
+</html>
